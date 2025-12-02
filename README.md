@@ -42,13 +42,14 @@ style.css
 ## ⚙️ Setup & Usage
 1. Clone the repository:
 git clone https://github.com/<garvit1226>/Netflix-clone.git2.
+
 Open `index.html` directly in your browser.
 No build tools or dependencies required.
 
 ---
 
 ## 🌐 Live Demo
-👉 https://euphonious-cucurucho-838927.netlify.app/
+👉 [https://euphonious-cucurucho-838927.netlify.app/](https://692ea6e9f2a143506b18cc9b--euphonious-cucurucho-838927.netlify.app/)
 
 ---
 
