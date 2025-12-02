@@ -41,7 +41,7 @@ style.css
 
 ## ⚙️ Setup & Usage
 1. Clone the repository:
-git clone https://github.com/<garvit1226>/netflix-clone.git2.
+git clone https://github.com/<garvit1226>/Netflix-clone.git2.
 Open `index.html` directly in your browser.
 No build tools or dependencies required.
 
