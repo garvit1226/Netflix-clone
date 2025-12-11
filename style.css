@@ -156,9 +156,10 @@ nav{
     border-radius: 4px;
     border: 0;
     text-align: center;
-    display: inline;
-    position: relative;
-    top: 2px;
+    display: inline-block;
+    vertical-align: middle;
+    
+    /* position removed so button vertically centers with input */
 }
 
 .red-si{
@@ -172,11 +173,29 @@ nav{
 
 }
 
+/* Changed: centering button with input - yaha maine styles add kiye
+   taaki "Get Started" button hamesha Email field ke center ke sath aligned rahe */
+#hero-last{
+    display: flex;
+    justify-content: center; /* horizontally center both input + button */
+    align-items: center; /* vertically align */
+    gap: 12px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* label ke andar wale input aur button ko flex bana diya taaki dono center me align ho */
+#hero-last label{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
 #hero-last input{
     align-items: center;
     padding: 3px 24px;
-    font-size: 30px;
-    width: 275px;
+    /* responsive width: 220px minimum, 30vw ideal, 400px max */
+    width: clamp(220px, 30vw, 400px);
     background-color: rgba(23, 23, 23, 0.2);
     border: 1px solid white;
     border-radius: 4px;
@@ -184,7 +203,7 @@ nav{
     height: 45px;
     font-size: medium;
     color: white;
-     transition: 0.3s ease;  
+    transition: 0.3s ease;  
 }
 
 
@@ -346,13 +365,23 @@ nav{
     }
 
     #hero-last input {
-        width: 90%;
+        width: 300px;
         margin-bottom: 10px;
         font-size: 1rem;
         height: 48px;
     }
+    /* small screens par label ko column karna bhi zaroori hai is liye yaha par change kar diya hai */
+    #hero-last label{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    #hero-last label .red-gs{
+        width: 90%;
+    }
 
     .red-gs {
+        max-width: 170px;
         font-size: 1.1rem;
         width: 50%;
         padding: 12px 0;
